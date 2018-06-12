@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name     = "RXOCDebug"
-  s.version  = "0.1.1"
+  s.version  = "0.1.2"
   s.license  = "MIT"
   s.summary  = "RXOCDebug is debug tool"
   s.homepage = "https://github.com/xzjxylophone/RXOCDebug"
@@ -15,12 +15,18 @@ Pod::Spec.new do |s|
   s.description = %{
     RXOCDebug is debug tool.
   }
-  s.source_files = 'RXOCDebug/*.{h,m}'
+  s.source_files = 'RXOCDebug/*.{h,m}', 'RXOCDebug/*/*.{h,m}'
   s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
   s.platform = :ios, '7.0'
 
 end
+
+
+
+
+
+
 
 
 
