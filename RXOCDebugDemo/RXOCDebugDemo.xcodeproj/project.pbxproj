@@ -13,6 +13,10 @@
 		E870200220CEACD800752211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E870200120CEACD800752211 /* Assets.xcassets */; };
 		E870200520CEACD800752211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E870200320CEACD800752211 /* LaunchScreen.storyboard */; };
 		E870200820CEACD800752211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E870200720CEACD800752211 /* main.m */; };
+		E870201420CFAE2000752211 /* NSObject+RXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E870201320CFAE2000752211 /* NSObject+RXDebug.m */; };
+		E870201720CFAE9A00752211 /* UIView+RXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E870201620CFAE9A00752211 /* UIView+RXDebug.m */; };
+		E870201A20CFAEBB00752211 /* NSData+RXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E870201920CFAEBB00752211 /* NSData+RXDebug.m */; };
+		E870201D20CFAECC00752211 /* UITableView+RXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E870201C20CFAECC00752211 /* UITableView+RXDebug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		E870200420CEACD800752211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E870200620CEACD800752211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E870200720CEACD800752211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E870201220CFAE2000752211 /* NSObject+RXDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RXDebug.h"; sourceTree = "<group>"; };
+		E870201320CFAE2000752211 /* NSObject+RXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RXDebug.m"; sourceTree = "<group>"; };
+		E870201520CFAE9A00752211 /* UIView+RXDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RXDebug.h"; sourceTree = "<group>"; };
+		E870201620CFAE9A00752211 /* UIView+RXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RXDebug.m"; sourceTree = "<group>"; };
+		E870201820CFAEBB00752211 /* NSData+RXDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+RXDebug.h"; sourceTree = "<group>"; };
+		E870201920CFAEBB00752211 /* NSData+RXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+RXDebug.m"; sourceTree = "<group>"; };
+		E870201B20CFAECC00752211 /* UITableView+RXDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+RXDebug.h"; sourceTree = "<group>"; };
+		E870201C20CFAECC00752211 /* UITableView+RXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RXDebug.m"; sourceTree = "<group>"; };
+		E870201E20CFAEEE00752211 /* RXDebugHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDebugHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +55,7 @@
 		E8701FEC20CEACD800752211 = {
 			isa = PBXGroup;
 			children = (
+				E870200E20CFAD8700752211 /* RXOCDebug */,
 				E8701FF720CEACD800752211 /* RXOCDebugDemo */,
 				E8701FF620CEACD800752211 /* Products */,
 			);
@@ -69,6 +83,47 @@
 				E870200720CEACD800752211 /* main.m */,
 			);
 			path = RXOCDebugDemo;
+			sourceTree = "<group>";
+		};
+		E870200E20CFAD8700752211 /* RXOCDebug */ = {
+			isa = PBXGroup;
+			children = (
+				E870201120CFAE0500752211 /* Foundation */,
+				E870200F20CFAE0500752211 /* objc */,
+				E870201020CFAE0500752211 /* UIKit */,
+				E870201E20CFAEEE00752211 /* RXDebugHeader.h */,
+			);
+			name = RXOCDebug;
+			path = ../RXOCDebug;
+			sourceTree = "<group>";
+		};
+		E870200F20CFAE0500752211 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				E870201220CFAE2000752211 /* NSObject+RXDebug.h */,
+				E870201320CFAE2000752211 /* NSObject+RXDebug.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		E870201020CFAE0500752211 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E870201520CFAE9A00752211 /* UIView+RXDebug.h */,
+				E870201620CFAE9A00752211 /* UIView+RXDebug.m */,
+				E870201B20CFAECC00752211 /* UITableView+RXDebug.h */,
+				E870201C20CFAECC00752211 /* UITableView+RXDebug.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E870201120CFAE0500752211 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E870201820CFAEBB00752211 /* NSData+RXDebug.h */,
+				E870201920CFAEBB00752211 /* NSData+RXDebug.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E870201A20CFAEBB00752211 /* NSData+RXDebug.m in Sources */,
 				E8701FFD20CEACD800752211 /* ViewController.m in Sources */,
+				E870201420CFAE2000752211 /* NSObject+RXDebug.m in Sources */,
+				E870201720CFAE9A00752211 /* UIView+RXDebug.m in Sources */,
 				E870200820CEACD800752211 /* main.m in Sources */,
+				E870201D20CFAECC00752211 /* UITableView+RXDebug.m in Sources */,
 				E8701FFA20CEACD800752211 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
